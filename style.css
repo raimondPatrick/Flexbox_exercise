@@ -1,11 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
 .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-
+    background-color: antiquewhite;
 }
 
-.images {
-    width: 400px;
+.cardWrapper{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;
 }
+
+    .significative {
+        display: flex;
+        align-items: center;
+        padding-right: 30px;
+        background-color: rgb(222, 200, 160);
+        /* margin-bottom: -10px; */
+    }
+        .image {
+            padding: 0;
+            margin-bottom: -10px;
+        }
+        .metaData {
+            margin-left: 20px;
+            outline: 1px solid red;
+        }
+        .metaData h1 {
+            color: gray;
+        }
+        .metaData p {
+            color: rgb(71, 71, 71);
+            margin-left: 10px;
+        }
+
+    .buttons {
+        display: flex;
+        background-color: rgb(104, 100, 94);
+        text-align: center;
+    }
+    .buttons .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 50px;
+    }
+    .buttons .icon:hover {
+        background-color: rgb(173, 150, 117);
+        cursor: pointer;
+    }
+    .buttons .icon:hover i {
+        color: rgb(78, 74, 69);
+    }
+    .buttons .icon i {
+        font-size: 2em;
+        color: aliceblue;
+    }
+
+.main {
+    flex: auto;
+}
+.associatedCard {
+    flex: initial;
+}
+
